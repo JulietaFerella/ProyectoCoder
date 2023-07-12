@@ -1,0 +1,272 @@
+*{  margin:0;
+    padding:0;
+    box-sizing:border-box;
+   }
+
+
+.contenedor {
+    max-width: 100vh;
+    max-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background-image: url(../assets/img/foto_piola_copia.png); */
+    
+    
+  }
+
+.DivTitulo{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.DivLogo {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+
+  }
+    
+  
+.body {
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+      }
+      
+
+
+.ImagenWhatsApp{
+  
+    position: fixed; /*Significa que el botón de WhatsApp siempre va a estar fija.*/
+    right: 20px;
+    bottom: 110px;
+    width: 50px;
+    height: 50px;
+    z-index: 100; /*Determina la posición hacia el frente de los demás elementos de la landing.*/
+    top: 550px; 
+
+}
+    
+/*
+.BarraDeNavCentro{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, #000000, #3d3a3a);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 100;
+        
+}
+
+nav li{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    position: sticky;
+    
+  
+}
+.navbar-logo {
+    display: flex;   
+    width: 40px;
+    height: 40px;
+    
+
+}
+
+
+.Menu {
+        display: inline-block;
+        margin-left: 17%;
+        float: center;
+        padding: 1px 50px;
+        position: sticky;
+    
+        }
+
+.Menu a{
+    text-decoration:none;
+    color:white;
+    margin-right: 50px;
+    font-size: 18px;
+
+}
+
+*/
+
+
+.PiolaLogo {
+    display: inline-block;
+    float: left;
+    margin-left: -18%;
+    margin-top: -7px;
+    padding: 2px 50px;
+    position: sticky;
+
+}
+
+.contacto .FormularioDeContacto{
+    display: block;
+    position: left;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+
+        
+}
+
+.IgLogo {
+        display: inline-block;
+        float:right;
+        margin-right: -18%;
+        margin-top: -7px;
+        padding: 1px 50px;
+        position: sticky;
+    
+        }
+
+
+    /* PUSE OTRO DE BOOTSTRAP. CHEQUEAR
+.FormularioDeContacto{
+    display: absolute;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+*/
+
+.BottonDeBuscarProyecto{
+    display: flex;
+    justify-content:right
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+}
+
+.GaleriaDeFotos{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr); /* Ejemplo de 3 columnas */
+    grid-gap: 20px; /* Espacio entre las imágenes */
+}
+
+.TitIndex {
+    color: rgb(255, 255, 255);
+}
+    
+
+.FotoPiolaFondo {
+    background-image: url(../assets/img/foto_piola.png);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+   } 
+
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+   .contenedor{
+    background-size: cover;
+    height: 100vh;
+
+
+   }
+   
+   .FotoPiolaFondo {
+    background-image: url(../assets/img/fondo_piola_web.jpg);
+
+   } 
+
+
+
+   .DivTitulo{
+    position: flex;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    
+   
+  }
+    .TitIndex {
+        color: black;
+    }
+
+.DivLogo {
+    position: flex;
+    top: 30%;
+    left: 50%
+    
+  } 
+
+  .navbar.navbar-8 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0');
+  }
+
+}
+  /*@media screen and (min-width:0px) and (max-width: 768px) {
+    .padreNavHeader{
+        flex-direction: column;
+        height: initial;
+    }
+   
+    .contenedorLogo a img{
+        width:80px;
+    }
+    .navHeader{
+        width:100%;
+    }
+   
+    .listaItem{
+        display: block;
+        border-bottom: 1px solid rgb(54, 54, 54);
+        text-align: center;
+        margin-bottom: 0.5rem;
+       /* padding-right: 3rem;*/
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* Estilos para pantallas medianas */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para dispositivos con un ancho de pantalla entre 601px y 1024px */
+    /* ... */
+  }
+  
+  /* Estilos para pantallas grandes */
+  @media screen and (min-width: 1025px) {
+    /* Estilos para dispositivos con un ancho de pantalla mínimo de 1025px */
+    /* ... */
+  }
+  
