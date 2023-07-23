@@ -1,0 +1,105 @@
+@import 'reset.scss';
+@import 'body.scss';
+@import 'header.scss';
+@import 'main.scss';
+@import 'footer.scss';
+@import 'variable.scss';
+
+
+
+
+.body{
+    
+    background-image: linear-gradient(to right bottom, #e9e97e, #feca69, #ffa96a, #ff887a, #ff6e92, #ff688d, #ff6188, #ff5a83, #ff7058, #ff922a, #e0b600, #abd610);
+}
+
+
+.PiolaLogo {
+    display: inline-block;
+    margin-left: -18%;
+    margin-top: -7px;
+    padding: 2px 50px;
+    position: sticky;
+
+}
+
+.contacto {
+    .FormularioDeContacto{
+        display: block;
+        position: left;
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-family: $tipografia-principal;
+    }
+}
+
+
+.IgLogo {
+        display: inline-block;
+        margin-right: -18%;
+        margin-top: -7px;
+        padding: 1px 50px;
+        position: sticky;
+    
+        }
+.h2quehacemos{
+   margin-right: $margenes-derecha;
+   margin-left: $margenes-izquierda;
+   color: $color-primario;
+}
+        .tipografiaquehacemos {
+           margin-left: $margenes-izquierda;
+           margin-right: $margenes-derecha;
+            font-family: $tipografia-principal;
+            color: $color-primario;
+            font-size: 20px;
+         }
+       
+
+         
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+   .contenedor{
+        background-size: cover;
+        height: 100vh;
+
+
+   }
+   
+        .FotoPiolaFondo {
+            background-image: url(../assets/img/fondo_piola_web.jpg);
+            object-fit: cover;
+
+        } 
+
+
+        .DivTitulo{
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+                
+            
+        }
+        .TitIndex {
+          color: black;
+            }
+
+        .DivLogo {
+          position: flex;
+          top: 30%;
+          left: 50%
+                    
+                } 
+
+        .navbar.navbar-8 .navbar-toggler-icon {
+            background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0');
+        }
+
+
+
+        
+
+}
+
