@@ -308,6 +308,10 @@
   font-size: 20px;
 }
 
+.imagengaleria {
+  border-radius: 15%;
+}
+
 /* Estilos para pantallas pequeñas */
 @media screen and (min-width: 0px) and (max-width: 601px) {
   .contenedor {
@@ -344,18 +348,19 @@
   .bodyquehacemos {
     background-size: contain;
     background-position: center center;
+    max-width: 100%;
+    height: auto;
   }
   .cardgrandequehacemos {
     position: relative;
   }
   .cardgrandequehacemos .elemento1 {
     position: fixed;
-    top: 200px;
   }
   .cardgrandequehacemos .elemento2 {
     position: absolute;
     padding: 10px;
-    top: 100%; /* Ubica el Elemento 2 debajo del Elemento 1 */
+    top: 100%;
   }
 }
 /* Estilos para pantallas medianas */

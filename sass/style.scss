@@ -185,9 +185,9 @@
                 font-size: 20px;
             }
    
-
-
-
+.imagengaleria{
+  border-radius: map-get($estilo-card, borderradius);
+}
 
 
 
@@ -240,6 +240,8 @@
   .bodyquehacemos{
     background-size: contain;
     background-position: center center;
+    max-width: 100%; 
+    height: auto;
    
   }
 
@@ -249,14 +251,14 @@
  
       .elemento1 {
         position: fixed;
-        top:200px; 
+        
         
       }
     
       .elemento2 {
         position: absolute;
         padding: 10px;
-        top: 100%; /* Ubica el Elemento 2 debajo del Elemento 1 */
+        top: 100%; 
        
       }
   
