@@ -75,6 +75,11 @@
   opacity: 90%;
 }
 
+.ContenidoContacto {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
 /* Estilos para pantallas pequeñas */
 @media screen and (min-width: 0px) and (max-width: 601px) {
   .contenedor {
@@ -310,6 +315,13 @@
 
 .imagengaleria {
   border-radius: 15%;
+}
+
+.ContenidoContacto {
+  margin-right: 30px;
+  margin-left: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
 }
 
 /* Estilos para pantallas pequeñas */

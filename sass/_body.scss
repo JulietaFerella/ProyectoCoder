@@ -78,6 +78,14 @@
       }
 
 
+.ContenidoContacto{
+  font-family: $tipografia-principal;
+  color: $color-primario;
+  
+}
+
+
+
         /* Estilos para pantallas pequeñas */
       @media screen and (min-width: 0px) and (max-width: 601px) {
         .contenedor{

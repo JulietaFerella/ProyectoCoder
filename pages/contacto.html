@@ -63,34 +63,39 @@
 
 <!--Este es el formulario para enviar a la empresa-->
 <br><br>
-<strong><h2 style="margin-left:20px">Contacto </h2></strong> 
+<strong><h1 style="margin-left:20px">Contacto </h1></strong> 
 <div class="FormularioDeContacto">
-  <br><br>
+  <br>
+<main>
+  <section>
+    <h2 class="ContenidoContacto">¡Bienvenido a nuestra página de contacto! Estamos emocionados de poder comunicarnos con vos y responder todas tus consultas. Ya sea que desees obtener más información sobre nuestros productos y servicios, tengas preguntas sobre tu pedido o simplemente quieras decirnos "hola", estamos del otro lado para ayudarte. </h2>
+  </section>
+</main> 
+<br>
 
-
-      <form> 
+      <form action="404.html" method="get"> 
 
         <div class="mb-3" style="margin-left:20px; margin-right: 20px;">
           <label for="exampleInputEmail1" class="form-label">Nombre*</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="email" class="form-control" id="Nombre" Julieta="name" required>
         </div>
 
         <div class="mb-3" style="margin-left:20px; margin-right: 20px;">
           <label for="exampleInputEmail1" class="form-label">Correo electrónico*</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="email" class="form-control" id="Email" Correo@gmail.com="email"required>
 
         </div>
 
         <div class="mb-3" style="margin-left:20px; margin-right: 20px;">
-          <label for="exampleFormControlTextarea1" class="form-label">Mensaje*</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="exampleFormControlTextarea1" class="form-label" required>Mensaje*</label>
+          <textarea class="form-control" id="Mensaje" rows="3"></textarea>
         </div>
 
         <br>
-        <div style="margin-left:20px; margin-right: 20px;" id="emailHelp" class="form-text">*Campos obligatorios</div>
+        <div style="margin-left:20px; margin-right: 20px;" id="Obligatorio" class="form-text footer">*Campos obligatorios</div>
         <!--Boton de enviar-->
         <br>
-        <button style="margin-left:20px; margin-right: 20px;" type="button" class="btn btn-success "> Enviar</button> 
+        <button style="margin-left:20px; margin-right: 20px;" type="button" class="btn btn-success " href="../pages/error404.html"> Enviar</button> 
 
 
 
