@@ -1,105 +1,300 @@
+@charset "UTF-8";
 @import 'reset.scss';
 @import 'body.scss';
-@import 'header.scss';
 @import 'main.scss';
 @import 'footer.scss';
 @import 'variable.scss';
 
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.contenedor {
+  max-width: 100vh;
+  max-height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+  flex-wrap: wrap;
+}
 
-.body{
-    
-    background-image: linear-gradient(to right bottom, #e9e97e, #feca69, #ffa96a, #ff887a, #ff6e92, #ff688d, #ff6188, #ff5a83, #ff7058, #ff922a, #e0b600, #abd610);
+.DivTitulo {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.DivLogo {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.ImagenWhatsApp {
+  position: fixed; /*Significa que el botón de WhatsApp siempre va a estar fijo.*/
+  right: 20px;
+  bottom: 110px;
+  width: 50px;
+  height: 50px;
+  z-index: 100; /*Determina la posición hacia el frente de los demás elementos de la landing.*/
+  top: 550px;
+}
+
+.BottonDeBuscarProyecto {
+  display: flex;
+  justify-content: right;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  margin-left: 10px;
+}
+
+.GaleriaDeFotos {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-gap: 20px; /* Espacio entre las imágenes */
+}
+
+.TitIndex {
+  color: rgb(255, 255, 255);
+}
+
+.FotoPiolaFondo {
+  background-image: url(../assets/img/foto_piola.png);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
 }
 
 
-.PiolaLogo {
-    display: inline-block;
-    margin-left: -18%;
-    margin-top: -7px;
-    padding: 2px 50px;
-    position: sticky;
+
+.cardgrandequienessomos{
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  border-radius: 5%; 
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  box-shadow: map-get($estilo-card, boxshadow);
+  
+  
+}
+
+.cardgrandequehacemos{
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  border-radius: 5%;  
+  position: absolute;
+  top: 100px;
+  left: 700px;
+  box-shadow: map-get($estilo-card, boxshadow);
+ 
+}
+
+
+.contenedor-cards {
+  margin-left: 140px;
+  opacity: 90%;
+}
+
+  
+  .cards {
+    max-width: map-get($estilo-card, maxwidt);
+    max-height: map-get($estilo-card, maxheight);
+    margin-right: map-get($estilo-card, marginright); 
+    border-radius: map-get($estilo-card, borderradius);
+    box-shadow: map-get($estilo-card, boxshadow);
 
 }
 
-.contacto {
-    .FormularioDeContacto{
-        display: block;
-        position: left;
-        text-align: left;
-        margin-top: 20px;
-        margin-left: 10px;
-        font-family: $tipografia-principal;
-    }
+
+
+.bodyquehacemos{
+  background-image: linear-gradient(to right bottom, #e9e97e, #feca69, #ffa96a, #ff887a, #ff6e92, #ff688d, #ff6188, #ff5a83, #ff7058, #ff922a, #e0b600, #abd610);
+  height: 100vh;
+  
 }
 
 
-.IgLogo {
-        display: inline-block;
-        margin-right: -18%;
-        margin-top: -7px;
-        padding: 1px 50px;
-        position: sticky;
-    
-        }
-.h2quehacemos{
-   margin-right: $margenes-derecha;
-   margin-left: $margenes-izquierda;
-   color: $color-primario;
-}
-        .tipografiaquehacemos {
-           margin-left: $margenes-izquierda;
-           margin-right: $margenes-derecha;
-            font-family: $tipografia-principal;
-            color: $color-primario;
-            font-size: 20px;
-         }
-       
-
-         
-/* Estilos para pantallas más pequeñas */
-@media screen and (max-width: 600px) {
-   .contenedor{
-        background-size: cover;
+  .body {
+        background-image: linear-gradient(to right bottom, #e9e97e, #feca69, #ffa96a, #ff887a, #ff6e92, #ff688d, #ff6188, #ff5a83, #ff7058, #ff922a, #e0b600, #abd610);
+      }
+      
+      .bodyIndex {
         height: 100vh;
+        width: 205vh;
+      }
 
-
-   }
-   
-        .FotoPiolaFondo {
-            background-image: url(../assets/img/fondo_piola_web.jpg);
-            object-fit: cover;
-
-        } 
-
-
-        .DivTitulo{
-          top: 60%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          position: absolute;
-                
-            
-        }
-        .TitIndex {
-          color: black;
-            }
-
-        .DivLogo {
-          position: flex;
-          top: 30%;
-          left: 50%
-                    
-                } 
-
-        .navbar.navbar-8 .navbar-toggler-icon {
-            background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0');
-        }
-
-
-
+      
+      .PiolaLogo {
+        display: inline-block;
+        padding: 2px 50px;
+        position: sticky;
+      }
+      
+      .contacto 
+          .FormularioDeContacto {
+            display: block;
+            position: left;
+            text-align: left;
+            margin-top: 20px;
+            margin-left: 10px;
+            font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+          }
+      
+      .IgLogo {
+        font-family: $tipografia-principal;
+        color: $color-primario;
+        display: flex;
+        margin-left: 90px;
+        margin-right: 50px;
+        margin-top: 350px;
+      
         
+      }
+
+
+
+.h2grande {
+        margin-left:10px;
+       
+        }
+    .h2quehacemos{
+    margin-right: $margenes-derecha;
+    margin-left: $margenes-izquierda;
+    color: $color-primario;
+    }
+   
+            .tipografiaquehacemos {
+            margin-left: $margenes-izquierda;
+            margin-right: $margenes-derecha;
+                font-family: $tipografia-principal;
+                color: $color-primario;
+                font-size: 20px;
+            }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para pantallas pequeñas */
+@media screen and (min-width: 0px) and (max-width: 601px) {
+  .contenedor {
+    background-size: cover;
+    height: 100vh;
+  }
+  .FotoPiolaFondo {
+    background-image: url(../assets/img/fondo_piola_web.jpg);
+    background-size: contain;
+    object-fit: cover;
+  }
+  .DivTitulo {
+    position: flex;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .TitIndex {
+    color: black;
+  }
+  .DivLogo {
+    position: flex;
+    top: 30%;
+    left: 50%;
+  }
+  .navbar.navbar-8 .navbar-toggler-icon {
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0");
+  }
+  .contenedor-cards {
+    margin-left: 14px;
+    opacity: 90%;
+  }
+  .bodyquehacemos{
+    background-size: contain;
+    background-position: center center;
+   
+  }
+
+
+  .cardgrandequehacemos{
+    position: relative;
+ 
+      .elemento1 {
+        position: fixed;
+        top:200px; 
+        
+      }
+    
+      .elemento2 {
+        position: absolute;
+        padding: 10px;
+        top: 100%; /* Ubica el Elemento 2 debajo del Elemento 1 */
+       
+      }
+  
+}
+
 
 }
 
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .contenedor {
+    background-size: cover;
+    height: 100vh;
+  }
+  .FotoPiolaFondo {
+    background-image: url(../assets/img/fondo_piola_web.jpg);
+    object-fit: cover;
+  }
+  .DivTitulo {
+    position: flex;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .TitIndex {
+    color: black;
+  }
+  .DivLogo {
+    position: flex;
+    top: 30%;
+    left: 50%;
+  }
+  .navbar.navbar-8 .navbar-toggler-icon {
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0");
+  }
+  .contenedor-cards {
+    margin-left: 14px;
+    opacity: 90%;
+  }
+}

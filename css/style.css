@@ -1,283 +1,393 @@
-*{  margin:0;
-    padding:0;
-    box-sizing:border-box;
-   }
-
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .contenedor {
-    max-width: 100vh;
-    max-height: 100vh;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    /*background-image: url(../assets/img/foto_piola_copia.png); */
-    
-    
-  }
+  max-width: 100vh;
+  max-height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+  flex-wrap: wrap;
+}
 
-.DivTitulo{
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+.DivTitulo {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
 }
 
 .DivLogo {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-
-  }
-    
-  
-.body {
-    width: 100%;
-    height: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-      }
-      
-
-
-.ImagenWhatsApp{
-  
-    position: fixed; /*Significa que el botón de WhatsApp siempre va a estar fija.*/
-    right: 20px;
-    bottom: 110px;
-    width: 50px;
-    height: 50px;
-    z-index: 100; /*Determina la posición hacia el frente de los demás elementos de la landing.*/
-    top: 550px; 
-
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
 }
 
-
-    
-/*
-.BarraDeNavCentro{
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    height: 50px;
-    padding: 10px 20px;
-    background-image: linear-gradient(to bottom, #000000, #3d3a3a);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    z-index: 100;
-        
+.ImagenWhatsApp {
+  position: fixed; /*Significa que el botón de WhatsApp siempre va a estar fija.*/
+  right: 20px;
+  bottom: 110px;
+  width: 50px;
+  height: 50px;
+  z-index: 100; /*Determina la posición hacia el frente de los demás elementos de la landing.*/
+  top: 550px;
 }
 
-nav li{
-    display: inline-block;
-    text-align: center;
-    border: 1px solid transparent;
-    position: sticky;
-    
-  
-}
-.navbar-logo {
-    display: flex;   
-    width: 40px;
-    height: 40px;
-    
-
+.BottonDeBuscarProyecto {
+  display: flex;
+  justify-content: right;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
 }
 
-
-.Menu {
-        display: inline-block;
-        margin-left: 17%;
-        float: center;
-        padding: 1px 50px;
-        position: sticky;
-    
-        }
-
-.Menu a{
-    text-decoration:none;
-    color:white;
-    margin-right: 50px;
-    font-size: 18px;
-
-}
-
-*/
-
-.body{
-    
-    background-image: linear-gradient(to right bottom, #e9e97e, #feca69, #ffa96a, #ff887a, #ff6e92, #ff688d, #ff6188, #ff5a83, #ff7058, #ff922a, #e0b600, #abd610);
-}
-
-
-
-.PiolaLogo {
-    display: inline-block;
-    /**float: left;**/
-    margin-left: -18%;
-    margin-top: -7px;
-    padding: 2px 50px;
-    position: sticky;
-
-}
-
-.contacto .FormularioDeContacto{
-    display: block;
-    position: left;
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 10px;
-
-        
-}
-
-.IgLogo {
-        display: inline-block;
-        /**float: right;**/
-        margin-right: -18%;
-        margin-top: -7px;
-        padding: 1px 50px;
-        position: sticky;
-    
-        }
-
-
-    /* PUSE OTRO DE BOOTSTRAP. CHEQUEAR
-.FormularioDeContacto{
-    display: absolute;
-    justify-content: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-*/
-
-.BottonDeBuscarProyecto{
-    display: flex;
-    justify-content:right;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 10px;
-}
-
-.GaleriaDeFotos{
-    display: flex;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr); /* Ejemplo de 3 columnas */
-    grid-gap: 20px; /* Espacio entre las imágenes */
+.GaleriaDeFotos {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr); /* Ejemplo de 3 columnas */
+  grid-gap: 20px; /* Espacio entre las imágenes */
 }
 
 .TitIndex {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-    
 
 .FotoPiolaFondo {
-    background-image: url(../assets/img/foto_piola.png);
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-   } 
+  background-image: url(../assets/img/foto_piola.png);
+  background-size: contain;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
 
+.contenedor-cards {
+  margin-left: 140px;
+  opacity: 90%;
+}
 
-
-
-
-/* Estilos para pantallas más pequeñas */
-@media screen and (max-width: 600px) {
-   .contenedor{
+/* Estilos para pantallas pequeñas */
+@media screen and (min-width: 0px) and (max-width: 601px) {
+  .contenedor {
     background-size: cover;
     height: 100vh;
-
-
-   }
-   
-   .FotoPiolaFondo {
+  }
+  .FotoPiolaFondo {
     background-image: url(../assets/img/fondo_piola_web.jpg);
-
-   } 
-
-
-
-   .DivTitulo{
+    object-fit: cover;
+  }
+  .DivTitulo {
     position: flex;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    
-   
   }
-    .TitIndex {
-        color: black;
-    }
-
-.DivLogo {
+  .TitIndex {
+    color: black;
+  }
+  .DivLogo {
     position: flex;
     top: 30%;
-    left: 50%
-    
-  } 
-
+    left: 50%;
+  }
   .navbar.navbar-8 .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0');
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0");
   }
-
+  .contenedor-cards {
+    margin-left: 14px;
+    opacity: 90%;
+  }
 }
-  /*@media screen and (min-width:0px) and (max-width: 768px) {
-    .padreNavHeader{
-        flex-direction: column;
-        height: initial;
-    }
-   
-    .contenedorLogo a img{
-        width:80px;
-    }
-    .navHeader{
-        width:100%;
-    }
-   
-    .listaItem{
-        display: block;
-        border-bottom: 1px solid rgb(54, 54, 54);
-        text-align: center;
-        margin-bottom: 0.5rem;
-       /* padding-right: 3rem;*/
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  /* Estilos para pantallas medianas */
-  @media screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Estilos para dispositivos con un ancho de pantalla entre 601px y 1024px */
-    /* ... */
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .contenedor {
+    background-size: cover;
+    height: 100vh;
   }
-  
-  /* Estilos para pantallas grandes */
-  @media screen and (min-width: 1025px) {
-    /* Estilos para dispositivos con un ancho de pantalla mínimo de 1025px */
-    /* ... */
+  .FotoPiolaFondo {
+    background-image: url(../assets/img/fondo_piola_web.jpg);
+    object-fit: cover;
   }
-  
+  .DivTitulo {
+    position: flex;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .TitIndex {
+    color: black;
+  }
+  .DivLogo {
+    position: flex;
+    top: 30%;
+    left: 50%;
+  }
+  .navbar.navbar-8 .navbar-toggler-icon {
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0");
+  }
+  .contenedor-cards {
+    margin-left: 14px;
+    opacity: 90%;
+  }
+}
+.footer {
+  font-family: italic;
+  background-color: background-color rgb(26, 25, 25);
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  max-width: 100vh;
+  max-height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+  flex-wrap: wrap;
+}
+
+.DivTitulo {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.DivLogo {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.ImagenWhatsApp {
+  position: fixed; /*Significa que el botón de WhatsApp siempre va a estar fijo.*/
+  right: 20px;
+  bottom: 110px;
+  width: 50px;
+  height: 50px;
+  z-index: 100; /*Determina la posición hacia el frente de los demás elementos de la landing.*/
+  top: 550px;
+}
+
+.BottonDeBuscarProyecto {
+  display: flex;
+  justify-content: right;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  margin-left: 10px;
+}
+
+.GaleriaDeFotos {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-gap: 20px; /* Espacio entre las imágenes */
+}
+
+.TitIndex {
+  color: rgb(255, 255, 255);
+}
+
+.FotoPiolaFondo {
+  background-image: url(../assets/img/foto_piola.png);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.cardgrandequienessomos {
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  border-radius: 5%;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  box-shadow: 0 5px 5px rgba(17, 17, 16, 0.5);
+}
+
+.cardgrandequehacemos {
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  border-radius: 5%;
+  position: absolute;
+  top: 100px;
+  left: 700px;
+  box-shadow: 0 5px 5px rgba(17, 17, 16, 0.5);
+}
+
+.contenedor-cards {
+  margin-left: 140px;
+  opacity: 90%;
+}
+
+.cards {
+  max-width: 13rem;
+  max-height: 20rem;
+  margin-right: 15px;
+  border-radius: 15%;
+  box-shadow: 0 5px 5px rgba(17, 17, 16, 0.5);
+}
+
+.bodyquehacemos {
+  background-image: linear-gradient(to right bottom, #e9e97e, #feca69, #ffa96a, #ff887a, #ff6e92, #ff688d, #ff6188, #ff5a83, #ff7058, #ff922a, #e0b600, #abd610);
+  height: 100vh;
+}
+
+.body {
+  background-image: linear-gradient(to right bottom, #e9e97e, #feca69, #ffa96a, #ff887a, #ff6e92, #ff688d, #ff6188, #ff5a83, #ff7058, #ff922a, #e0b600, #abd610);
+}
+
+.bodyIndex {
+  height: 100vh;
+  width: 205vh;
+}
+
+.PiolaLogo {
+  display: inline-block;
+  padding: 2px 50px;
+  position: sticky;
+}
+
+.contacto .FormularioDeContacto {
+  display: block;
+  position: left;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.IgLogo {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(0, 0, 0);
+  display: flex;
+  margin-left: 90px;
+  margin-right: 50px;
+  margin-top: 350px;
+}
+
+.h2grande {
+  margin-left: 10px;
+}
+
+.h2quehacemos {
+  margin-right: 30px;
+  margin-left: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.tipografiaquehacemos {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (min-width: 0px) and (max-width: 601px) {
+  .contenedor {
+    background-size: cover;
+    height: 100vh;
+  }
+  .FotoPiolaFondo {
+    background-image: url(../assets/img/fondo_piola_web.jpg);
+    background-size: contain;
+    object-fit: cover;
+  }
+  .DivTitulo {
+    position: flex;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .TitIndex {
+    color: black;
+  }
+  .DivLogo {
+    position: flex;
+    top: 30%;
+    left: 50%;
+  }
+  .navbar.navbar-8 .navbar-toggler-icon {
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0");
+  }
+  .contenedor-cards {
+    margin-left: 14px;
+    opacity: 90%;
+  }
+  .bodyquehacemos {
+    background-size: contain;
+    background-position: center center;
+  }
+  .cardgrandequehacemos {
+    position: relative;
+  }
+  .cardgrandequehacemos .elemento1 {
+    position: fixed;
+    top: 200px;
+  }
+  .cardgrandequehacemos .elemento2 {
+    position: absolute;
+    padding: 10px;
+    top: 100%; /* Ubica el Elemento 2 debajo del Elemento 1 */
+  }
+}
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .contenedor {
+    background-size: cover;
+    height: 100vh;
+  }
+  .FotoPiolaFondo {
+    background-image: url(../assets/img/fondo_piola_web.jpg);
+    object-fit: cover;
+  }
+  .DivTitulo {
+    position: flex;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .TitIndex {
+    color: black;
+  }
+  .DivLogo {
+    position: flex;
+    top: 30%;
+    left: 50%;
+  }
+  .navbar.navbar-8 .navbar-toggler-icon {
+    background-image: url("https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0");
+  }
+  .contenedor-cards {
+    margin-left: 14px;
+    opacity: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

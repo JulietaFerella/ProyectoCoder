@@ -1,7 +1,30 @@
-$color-primario: black;
+//vars//
+$color-primario: rgb(0, 0, 0);
 $tipografia-principal: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 
 
 $margenes-izquierda: 30px;
 $margenes-derecha: 30px;
+
+
+//footer//
+$color-fondo-fotter: background-color rgb(26, 25, 25);
+$footer-tipografia: italic;
+$footer-color: white;
+
+
+//para body//
+$body-1: 100vh;
+$body-2: 205vh;
+
+//mapa para las cards de Proceso//
+$estilo-card: ( 
+    maxwidt: 13rem,
+    maxheight: 20rem,
+    marginright: 15px,
+    borderradius: 15%,
+    boxshadow: 0 5px 5px rgba(17, 17, 16, 0.5)
+);
+
+
 
