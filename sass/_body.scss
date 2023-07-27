@@ -84,7 +84,12 @@
   
 }
 
-
+.error404{
+  font-family: $tipografia-principal;
+  color: $color-primario;
+  margin-left: 30px;
+  
+}
 
         /* Estilos para pantallas pequeñas */
       @media screen and (min-width: 0px) and (max-width: 601px) {

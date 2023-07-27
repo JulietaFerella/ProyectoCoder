@@ -80,6 +80,12 @@
   color: rgb(0, 0, 0);
 }
 
+.error404 {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(0, 0, 0);
+  margin-left: 30px;
+}
+
 /* Estilos para pantallas pequeñas */
 @media screen and (min-width: 0px) and (max-width: 601px) {
   .contenedor {
