@@ -76,16 +76,11 @@
 
 .footer{
   font-family: $footer-tipografia;
-  background-color: $color-fondo-fotter;
-  color: white;
+  background-color: color-fondo-fotter;
+  color: black;
             
       }
-  /**    .footer {
-        font-family: italic;
-        background-color: background-color rgb(26, 25, 25);
-        color: white;
-      }
-**/      
+ 
 
 
       .body {
@@ -96,11 +91,7 @@
         height: 100vh;
         width: 205vh;
       }
-      /**.bodyIndex{
-    height: $body-1;
-    width: $body-2;
-}
-**/
+ 
       
       .PiolaLogo {
         display: inline-block;
@@ -156,17 +147,13 @@
     margin-left: $margenes-izquierda;
     color: $color-primario;
     }
-    /**  .h2quehacemos {
-        margin-right: 30px;
-        margin-left: 30px;
-        color: black;
-      }**/
+    
             .tipografiaquehacemos {
-            margin-left: $margenes-izquierda;
-            margin-right: $margenes-derecha;
-                font-family: $tipografia-principal;
-                color: $color-primario;
-                font-size: 20px;
+                 margin-left: $margenes-izquierda;
+                 margin-right: $margenes-derecha;
+                 font-family: $tipografia-principal;
+                 color: $color-primario;
+                 font-size: 20px;
             }
    
 

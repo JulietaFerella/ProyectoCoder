@@ -155,13 +155,17 @@
 .footer {
   font-family: italic;
   background-color: background-color rgb(26, 25, 25);
-  color: white;
+  color: rgb(22, 21, 21);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
 }
 
 .contenedor {
@@ -270,6 +274,9 @@
 
 .body {
   background-image: linear-gradient(to right bottom, #e9e97e, #feca69, #ffa96a, #ff887a, #ff6e92, #ff688d, #ff6188, #ff5a83, #ff7058, #ff922a, #e0b600, #abd610);
+  background-size: cover;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .bodyIndex {
@@ -330,15 +337,34 @@
   font-size: 16px;
 }
 
+.div1 {
+  margin-left: 330px;
+  margin-right: 150px;
+  display: flex;
+}
+
+.div2 {
+  margin-left: 450px;
+  display: flex;
+}
+
+.footer_piola {
+  background-color: rgb(26, 25, 25);
+  color: white;
+}
+
 /* Estilos para pantallas pequeñas */
 @media screen and (min-width: 0px) and (max-width: 601px) {
+  html, body {
+    max-width: 100%;
+  }
   .contenedor {
     background-size: cover;
     height: 100vh;
   }
   .FotoPiolaFondo {
     background-image: url(../assets/img/fondo_piola_web.jpg);
-    background-size: contain;
+    background-size: cover;
     object-fit: cover;
   }
   .DivTitulo {
@@ -380,9 +406,23 @@
     padding: 10px;
     top: 100%;
   }
+  .div1 {
+    margin-left: 110px;
+    margin-right: 150px;
+  }
+  .div2 {
+    margin-left: 120px;
+  }
+  .footer_piola {
+    background-color: rgb(26, 25, 25);
+    color: white;
+  }
 }
 /* Estilos para pantallas medianas */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+  html, body {
+    max-width: 100%;
+  }
   .contenedor {
     background-size: cover;
     height: 100vh;
@@ -412,5 +452,16 @@
   .contenedor-cards {
     margin-left: 14px;
     opacity: 90%;
+  }
+  .div1 {
+    margin-left: 160px;
+    margin-right: 150px;
+  }
+  .div2 {
+    margin-left: 260px;
+  }
+  .footer_piola {
+    background-color: rgb(26, 25, 25);
+    color: white;
   }
 }/*# sourceMappingURL=style.css.map */
